@@ -1,94 +1,22 @@
-![USACO Guide](./src/assets/banner-image-big.jpg)
+# OI Guide
 
-# USACO Guide
+oi.guide是一个从零基础到noi比赛的公益训练指南
 
-A free collection of curated, high-quality resources to take you from Bronze to
-Platinum and beyond.
+本项目思路和技术来源于[usaco.guide](https://github.com/cpinitiative/usaco-guide)，并在此基础上针对国内的训练计划进行重新的课程研发，适合中国选手参考和学习
 
-Thank you to the following companies:
+## 文档与贡献
 
-- [Vercel](https://vercel.com/?utm_source=cp-initiative&utm_campaign=oss),
-  hosting & continuous deployment
-- [Algolia](https://algolia.com/), search functionality
-- [DigitalOcean](https://m.do.co/c/a07c32d07394), forum hosting
-- [Chromatic](https://www.chromatic.com/), visual testing
-- And [more](docs/Companies.md)!
+贡献文档正在紧张编写中！
 
-## Documentation + Contributing
+十分欢迎大家在issue中对课程内容提出建议，以及添加对应难度的知识点，同时拉取请求。
 
-See the [contributing module](https://usaco.guide/general/contributing). All
-contributions are welcome! To get started, simply pick an
-[issue](https://github.com/cpinitiative/usaco-guide/issues) you'd like to work
-on, leave a comment, and submit a Pull Request!
+## 我们的团队
 
-Join our Discord server: https://discord.gg/VCxUzdYhzN
+oi.guide正在积极筹备技术团队和备课团队，欢迎大家参与到改进训练指南的计划中！
 
-## Our Team
+## 技术栈
 
-The USACO Guide is run by the
-[Competitive Programming Initiative](https://joincpi.org/). We're looking for
-Content Authors to join our team to help us improve the Guide! Learn more
-[here](https://docs.google.com/document/d/13QpXqdiYQwjBLnywGL1FUG7GFdh8SM_1NigIkJl-A7k/edit).
-
-### Core Team
-
-- Nathan Wang
-- Maggie Liu (Since Aug 2021)
-- Melody Yu (Since Aug 2021)
-- Andi Qu
-- Siyong Huang
-- Darren Yao
-- Michael Cao
-
-### Content Managers
-
-- Qi Wang (Since Jun 2021)
-- Dong Liu (Since Jun 2021)
-- Neo Wang (Since Aug 2021)
-- Kevin Sheng (Since Oct 2021)
-
-### Former Core Team
-
-- Benjamin Qi
-- Andrew Wang
-- Nathan Chen
-
-### Current Content Authors
-
-- Jesse Choe (Since Feb 2021)
-- Sofia Yang (Since Apr 2021)
-- Nathan Gong (Since Apr 2021)
-- Timothy Gao (Since May 2021)
-- Sathvik Chundru (Since May 2021)
-- Brad Ma (Since Jun 2021)
-- Albert Ye (Since Jun 2021)
-- Arpan Banerjee (Since Jun 2021)
-- Ryan Chou (Since Jul 2021)
-- Aadit Ambadkar (Since Aug 2021)
-- Dustin Miao (Since Aug 2021)
-- Ben Dodge (Since Aug 2021)
-- Jeffrey Zhang (Since Feb 2022)
-- Chongtian Ma (Since May 2022)
-- Aditya Gupta (Since Jun 2022)
-- Chuyang Wang (Since August 2022)
-- Aakash Gokhale (Since August 2022)
-- Paul Chen (Since August 2022)
-- Daniel Ge (Since June 2023)
-- _This could be you!
-  [Apply here](https://docs.google.com/document/d/13QpXqdiYQwjBLnywGL1FUG7GFdh8SM_1NigIkJl-A7k/edit)._
-
-### Past Content Authors
-
-- Óscar Garries Urbina
-- Mrinall Umasudhan
-- Andrew Cheng
-- Zhixin Wang
-- Jeffrey Meng
-- Ananth Kashyap
-
-## Tech Stack
-
-Our front-end is built with:
+我们的技术主要有：
 
 - React
 - Gatsby
@@ -101,9 +29,9 @@ Our front-end is built with:
 - Deployed with
   [Vercel](https://vercel.com/?utm_source=cp-initiative&utm_campaign=oss)
 
-## Contact Info
+## 联系方式
 
-If you have any questions, please reach out to us at usacoguide@gmail.com.
+如果你有问题，请联系某个邮箱（邮箱还没创建好）
 
 ## License
 
