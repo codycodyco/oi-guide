@@ -24,7 +24,7 @@ export default function SectionsDropdown({
               }`}
             >
               <span>
-                {currentSection ? SECTION_LABELS[currentSection] : 'Sections'}
+                {currentSection ? SECTION_LABELS[currentSection] : '章节'}
               </span>
               <ChevronDownIcon
                 className={`${
@@ -46,7 +46,7 @@ export default function SectionsDropdown({
               }`}
             >
               <span className="mt-0.5">
-                {currentSection ? SECTION_LABELS[currentSection] : 'Sections'}
+                {currentSection ? SECTION_LABELS[currentSection] : '章节'}
               </span>
               <ChevronDownIcon
                 className={`${

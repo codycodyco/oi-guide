@@ -17,8 +17,8 @@ export type Chapter = {
 const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
   general: [
     {
-      name: 'Getting Started',
-      description: "Start here if you're new to competitive programming.",
+      name: '算法竞赛起步',
+      description: "算法竞赛是在比什么？",
       items: [
         'using-this-guide',
         'intro-cp',
@@ -269,12 +269,12 @@ export const SECTIONS: SectionID[] = Object.keys(
   MODULE_ORDERING
 ) as SectionID[];
 export const SECTION_LABELS: { [key in SectionID]: string } = {
-  general: 'General',
-  bronze: 'Bronze',
-  silver: 'Silver',
-  gold: 'Gold',
-  plat: 'Platinum',
-  adv: 'Advanced',
+  general: '语法与竞赛入门',
+  bronze: '普及组入门',
+  silver: '普及组加强',
+  gold: '提高组入门',
+  plat: '提高组加强',
+  adv: 'NOI',
 } as const;
 export const SECTION_SEO_DESCRIPTION: { [key in SectionID]: string } = {
   general:

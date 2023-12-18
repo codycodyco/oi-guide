@@ -88,10 +88,9 @@ const topicsWarning = (
 const SECTION_DESCRIPTION: { [key in SectionID]: React.ReactNode } = {
   general: (
     <>
-      You don't have to complete all the modules in this section before moving
-      on to Bronze.
+      在这个阶段，你将要学习最基础的c语言语法知识，以及认识算法竞赛
       <br />
-      Feel free to mark some as "skipped" and revisit them at a later time!
+      竞赛中不会考察，但是对参与比赛十分有用的技巧也会在这个章节学习
     </>
   ),
   bronze: (
@@ -197,7 +196,7 @@ export default function Template(props) {
                 <div className="bg-white dark:bg-gray-900 shadow sm:rounded-lg">
                   <div className="px-4 py-5 sm:p-6">
                     <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-dark-high-emphasis">
-                      Modules Progress
+                      学习进度
                     </h3>
                     <div className="mt-6">
                       <DashboardProgress
@@ -210,7 +209,7 @@ export default function Template(props) {
                 <div className="bg-white dark:bg-gray-900 shadow sm:rounded-lg">
                   <div className="px-4 py-5 sm:p-6">
                     <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-dark-high-emphasis">
-                      Problems Progress
+                      题目进度
                     </h3>
                     <div className="mt-6">
                       <DashboardProgress

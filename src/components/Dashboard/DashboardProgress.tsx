@@ -70,25 +70,25 @@ export default function DashboardProgress({
       <div className="grid grid-cols-4 gap-2 mb-4">
         <FancyNumber
           number={completed}
-          text="Completed"
+          text="完成"
           textColor="text-green-800 dark:text-green-100"
           bgColor="bg-green-100 dark:bg-green-800"
         />
         <FancyNumber
           number={inProgress}
-          text="In Progress"
+          text="正在尝试"
           textColor="text-yellow-800 dark:text-yellow-100"
           bgColor="bg-yellow-100 dark:bg-yellow-800"
         />
         <FancyNumber
           number={skipped}
-          text="Skipped"
+          text="跳过"
           textColor="text-blue-800 dark:text-blue-50"
           bgColor="bg-blue-50 dark:bg-blue-800"
         />
         <FancyNumber
           number={notStarted}
-          text="Not Started"
+          text="未开始"
           textColor="text-gray-800"
           bgColor="bg-gray-100"
           subTextColor="text-gray-800 dark:text-gray-100"
