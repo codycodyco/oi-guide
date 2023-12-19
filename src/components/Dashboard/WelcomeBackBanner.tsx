@@ -14,14 +14,14 @@ export default function WelcomeBackBanner({
         <div>
           <h3 className="text-xl sm:text-2xl leading-7 font-medium text-white dark:text-dark-high-emphasis">
             {lastViewedModuleURL
-              ? 'Welcome Back!'
-              : 'Welcome to the USACO Guide!'}
+              ? '欢迎回来！'
+              : '欢迎来到OI Guide!'}
           </h3>
           <div className="mt-2 text-teal-200 dark:text-teal-300">
             <p>
               {lastViewedModuleURL
-                ? `Pick up where you left off. Your last viewed module was "${lastViewedModuleLabel}."`
-                : `Get started on the first module, "Using This Guide."`}
+                ? `从之前停下的地方继续吧，最后一次查看的模块是： "${lastViewedModuleLabel}."`
+                : `使用OI Guide，开始算法竞赛的旅程吧！"`}
             </p>
           </div>
         </div>
