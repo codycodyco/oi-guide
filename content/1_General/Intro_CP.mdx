@@ -1,103 +1,82 @@
 ---
 id: intro-cp
-title: Introduction to Competitive Programming
-author: Nathan Wang, Benjamin Qi, Darren Yao
-description: Programming competitions, including the USA Computing Olympiad.
+title: 算法竞赛介绍
+author: Nathan Wang, Benjamin Qi, Darren Yao,Cody
+description: 什么是算法竞赛？算法竞赛比拼什么？
 redirects:
   - intro
 ---
 
-## Programming Competitions
+## 算法竞赛
 
-A
-[programming competition](https://en.wikipedia.org/wiki/Competitive_programming)
-generally lasts for several hours and consists of a set of problems. These
-problems are not open problems; they have already been solved by the problem
-writers and testers and are designed to be solved in the short timeframe of a
-contest. In general, each problem in competitive programming is solved with a
-two-step process:
+一场算法竞赛通常持续数小时，你需要编程解决一系列问题。这些问题不是公开的问题；
 
-1.  coming up with the algorithm, which involves problem solving skills and
-    intuition
-2.  implementing the algorithm, which requires programming skills to translate
-    the algorithm into working code.
+问题编写者和测试人员已经解决了这些问题，你需要在比赛的短时间内编程解决他们。
 
-For each problem, you submit the completed code to a grader, which checks the
-answers calculated by your program against a set of predetermined test cases.
-For each problem, you are given a time limit (usually 2 seconds) and a memory
-limit (usually 256 [megabytes](https://en.wikipedia.org/wiki/Megabyte)) that
-your program must satisfy.
+一般来说，算法竞赛中的每个问题都通过两步过程来解决：
 
-For those of you with experience in software development, note that competitive
-programming is quite different, as the goal is to write programs that compute
-the correct answer, run quickly, and can be implemented quickly. Note that
-nowhere was maintainability of code mentioned. You don't need to bother
-documenting your code because it only needs to be readable to you during the
-contest. That being said, you probably want to maintain a bare minimum level of
-readability so you can keep track of what's going on.
+1.  通过技巧和直觉提出合适的算法
+2.  通过编程，将算法表现成代码
+
+对于每一个问题，你都要将完成的代码提交给评测程序，评测程序会将许多问题输入到你的代码执行的程序中，并检查程序是否按照要求计算以及输出了正确的答案。对于每个问题，程序必须在规定的时间内计算完成（通常为2秒）和内存限制（通常是256m）。
+
+请注意，算法竞赛和进行软件开发不一样，你只需要保证程序快速运行并输出正确答案即可，代码可读性在此时不太重要，勉勉强强能读懂即可。
+
+举个不太恰当的例子，软件开发类似于开货车完成装货，拉货，卸货等任务，每一步都十分重要而且需要许多人合作完成，但算法竞赛类似于在赛场上开赛车，我们只需要尽可能快地到达终点即可
 
 <!-- <Optional title="More Information"> -->
 
-<div class="yt-video-container my-8">
-	<iframe
-		width="560"
-		height="315"
-		src="https://www.youtube.com/embed/ueNT-w7Oluw"
-		frameborder="0"
-		allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-		allowfullscreen
-	></iframe>
-</div>
-
 <Resources>
 	<Resource
-		source="William Lin"
-		title="Video - What is Competitive Programming?"
-		url="https://www.youtube.com/watch?time_continue=1&v=ueNT-w7Oluw"
+		source="oi-wiki"
+		title="OI 赛事与赛制"
+		url="https://oi-wiki.org/contest/oi/"
 	>
-		video shown above
+		赛事与赛制介绍
 	</Resource>
 	<Resource
-		source="Kamil Debowski"
-		title="Video - Interview with a Competitive Programmer"
-		url="https://www.youtube.com/watch?v=F4rykKLcduI"
-	 />
-	<Resource source="CPH" title="1 - Introduction">
-		algorithms & programming contests
+		source="oi-wiki"
+		title="ICPC/CCPC 赛事与赛制"
+		url="https://oi-wiki.org/contest/icpc/"
+	>
+		对于大学生的acm赛事介绍
 	</Resource>
-	<Resource source="IUSACO" title="1 - The Beginning">
-		competitive programming, contests
-	</Resource>
-	<Resource source="PAPS" title="1 - Algorithms & Problems">
-		examples of algorithms
-	</Resource>
+	<Resource
+		source="NOI"
+		title="全国青少年信息学奥林匹克竞赛系列活动简介"
+		url="https://www.noi.cn/gynoi/jj/"
+	 >
+	 信息学系列赛事介绍
+	 </Resource>
 </Resources>
 
-Here is a task similar to the one that was solved in Kamil's video:
+如果你学过基本的编程语法，下面这个例子就是一个简单的算法题
 
-<FocusProblem problem="general" />
+<FocusProblem problem="A+B_Problem" />
 
-<Info title="Beginners!">
-If you have prior programming experience we encourage you to register a Kattis account and submit a solution.
-If not, feel free to skip ahead to the solution.
+<Info title="初学者！">
+如果您之前有编程经验，我们鼓励您注册帐户并提交解决方案。
+
+如果没有，请跳到解决方案。
 </Info>
 
-## Solution - Basketball One-on-One
+## 解决方案 - A+B Problem
 
-Just print the second-to-last character of the input.
+读入两个数，并输出答案即可
 
 <LanguageSection>
 
 <CPPSection>
 
 ```cpp
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	string s;
-	cin >> s;
-	cout << s[s.size() - 2];
+    int a,b;
+    cin >> a >> b;
+    cout << a+b;
+    return 0;
 }
 ```
 
@@ -106,7 +85,9 @@ int main() {
 <PySection>
 
 ```py
-print(input()[-2])
+a, b = map(int, input().split())
+print(a + b)
+
 ```
 
 </PySection>
@@ -116,29 +97,18 @@ print(input()[-2])
 ```java
 import java.util.Scanner;
 
-public class basketballoneonone {
-	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		String s = in.next();
-		System.out.println(s.charAt(s.length() - 2));
-	}
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int a = scanner.nextInt();
+        int b = scanner.nextInt();
+        System.out.println(a + b);
+    }
 }
+
 ```
 
 </JavaSection>
 
 </LanguageSection>
 
-
-## USACO
-
-The [USA Computing Olympiad](http://www.usaco.org/) is a national programming
-competition that occurs four times a year, with December, January, February, and
-US Open (March) contests. The regular contests are four hours long, and the US
-Open is five hours long. Each contest contains three problems. Solutions are
-evaluated and scored against a set of predetermined test cases. Scoring is out of
-1000 points, with each problem being weighted equally (\~333 points). There are four divisions of contests: Bronze, Silver, Gold, and Platinum. After each contest, students who
-meet the contest-dependent cutoff for promotion will compete in the next division
-for future contests.
-
-See the [USACO FAQ](/general/usaco-faq/) for more information.
