@@ -5,11 +5,11 @@ const flags = {
 };
 
 const siteMetadata = {
-  title: `USACO Guide`,
+  title: `OI Guide`,
   description: `A free collection of curated, high-quality competitive programming resources to take you from USACO Bronze to USACO Platinum and beyond. Written by top USACO Finalists, these tutorials will guide you through your competitive programming journey.`,
   author: `@usacoguide`,
   siteUrl: `https://usaco.guide/`,
-  keywords: ['USACO', 'Competitive Programming', 'USACO Guide'],
+  keywords: ['OI', 'Competitive Programming', 'OI Guide'],
 };
 
 const plugins = [
