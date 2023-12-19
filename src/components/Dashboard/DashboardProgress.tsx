@@ -98,7 +98,7 @@ export default function DashboardProgress({
         green={total === 0 ? 0 : (completed / total) * 100}
         yellow={total === 0 ? 0 : (inProgress / total) * 100}
         blue={total === 0 ? 0 : (skipped / total) * 100}
-        text={`${total} total`}
+        text={`共计 ${total}`}
       />
     </div>
   );

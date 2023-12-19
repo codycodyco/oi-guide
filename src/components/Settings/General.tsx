@@ -46,7 +46,7 @@ export default function General(): JSX.Element {
     <div>
       <div className="space-y-1">
         <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-gray-100">
-          Options
+          选项
         </h3>
       </div>
       <div>
@@ -57,7 +57,7 @@ export default function General(): JSX.Element {
                 className="text-sm font-medium text-gray-500 dark:text-gray-300"
                 id="privacy-option-1-label"
               >
-                Problem Lists and Search: Show Tags
+                在问题列表和搜索中显示标签
               </p>
             </div>
             <Switch checked={showTags} onChange={b => setShowTags(b)} />
@@ -68,7 +68,7 @@ export default function General(): JSX.Element {
                 className="text-sm font-medium text-gray-500 dark:text-gray-300"
                 id="privacy-option-1-label"
               >
-                Problem Lists and Search: Hide Difficulty
+                在问题列表和搜索在隐藏难度
               </p>
             </div>
             <Switch
@@ -82,7 +82,7 @@ export default function General(): JSX.Element {
                 className="text-sm font-medium text-gray-500 dark:text-gray-300"
                 id="privacy-option-1-label"
               >
-                Problem Search: Hide Modules
+                在问题搜索中隐藏模块
               </p>
             </div>
             <Switch checked={hideModules} onChange={b => setHideModules(b)} />
@@ -93,7 +93,7 @@ export default function General(): JSX.Element {
                 className="text-sm font-medium text-gray-500 dark:text-gray-300"
                 id="privacy-option-2-label"
               >
-                Dashboard: Show Ignored Problems & Modules
+                在仪表板中，显示忽略的问题和错误模块
               </p>
             </div>
             <Switch checked={showIgnored} onChange={b => setShowIgnored(b)} />
@@ -104,10 +104,9 @@ export default function General(): JSX.Element {
                 className="text-sm font-medium text-gray-500 dark:text-gray-300"
                 id="privacy-option-2-label"
               >
-                Use Long Polling (Close and reopen tab after toggling) -{' '}
+                使用 Long Polling（切换后关闭并重新打开选项卡） -{' '}
                 <span className="font-bold">
-                  Enable this option ONLY if you encounter issues connecting to
-                  Firebase (nothing loads).
+                -仅当您在连接到 Firebase 时遇到问题（未加载任何内容）时才启用此选项。
                 </span>
               </p>
             </div>

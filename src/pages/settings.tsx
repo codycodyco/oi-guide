@@ -39,9 +39,9 @@ export default function SettingsPage() {
   const { isAdmin } = useUserPermissions();
   const tabs = [
     'general',
-    'profile',
+    /* 'profile',
     'auth',
-    'user-data',
+    'user-data', */
     ...(isAdmin ? ['admin'] : []),
   ];
   const [tab, setTab] = React.useReducer((prev, next) => {
@@ -86,23 +86,20 @@ export default function SettingsPage() {
                 clipRule="evenodd"
               />
             </svg>
-            Back
+            返回
           </button>
           <div className="pt-4 sm:pt-6 pb-16">
             <div className="px-4 sm:px-6 md:px-0">
               <h1 className="text-3xl font-extrabold text-gray-900 dark:text-gray-100">
-                Settings
+                设置
               </h1>
-              <p className="text-gray-500 dark:text-gray-400 mt-2">
-                If you're signed in, settings sync across devices.
-              </p>
             </div>
             <div className="px-4 sm:px-6 md:px-0">
               <div className="py-6">
                 <UnderlinedTabs
                   options={tabs}
                   labelMap={{
-                    general: 'General',
+                    general: '基本设置',
                     profile: 'Profile',
                     auth: 'Sign In Methods',
                     'user-data': 'User Data',
@@ -120,21 +117,6 @@ export default function SettingsPage() {
                       <Language />
                       <DarkMode />
                       <General />
-                    </>
-                  )}
-                  {tab === 'profile' && (
-                    <>
-                      <Profile />
-                    </>
-                  )}
-                  {tab === 'auth' && (
-                    <>
-                      <Authentication />
-                    </>
-                  )}
-                  {tab === 'user-data' && (
-                    <>
-                      <UserData />
                     </>
                   )}
                   {tab === 'admin' && (

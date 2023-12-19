@@ -25,12 +25,12 @@ const ComeBackTimer = ({ tomorrowMilliseconds }) => {
 
   return (
     <div>
-      Come back in
+      在
       <p className="text-2xl my-2">
-        {hours} hours {minutes} minutes {seconds} seconds
+        {hours} 小时 {minutes} 分钟 {seconds} 秒后
       </p>
-      to {days ? 'continue your streak' : 'unlock this cow photo'}!
-      {days ? ` Photo will be unlocked after ${days + 1} days.` : null}
+      可以 {days ? 'continue your streak' : '解锁这张牛的照片'}!
+      {days ? ` 照片会在 ${days + 1} 天后解锁` : null}
     </div>
   );
 };
@@ -45,7 +45,7 @@ const PhotoCard = ({ img, day, tomorrowMilliseconds, hiddenOnDesktop }) => {
       <div className="bg-white dark:bg-gray-900 shadow sm:rounded-lg overflow-hidden flex flex-col">
         <div className="px-4 pt-5 sm:px-6 sm:pt-6 pb-4">
           <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-dark-high-emphasis">
-            Day {day} Photo
+            第 {day} 天的照片
           </h3>
         </div>
         {/* We set text size to 0px because GatsbyImage is inline block. Without it, there's extra space after the image. */}
@@ -188,17 +188,15 @@ export default function DailyStreak({ streak }) {
         <div className="px-4 py-5 sm:p-6">
           <div className="text-center">
             <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-dark-high-emphasis">
-              🔥 {streak} Day Streak: Keep it up!
+              🔥 连续学习{streak} 天 : 请加油！
             </h3>
             <div className="mt-3 text-sm leading-5 text-gray-500 dark:text-dark-med-emphasis space-y-1">
               <p>
-                You've visited this guide for {streak} consecutive day
-                {streak !== 1 && 's'}.
+                您已连续访问本指南 {streak} 天。
+                {streak !== 1 && 's'}
               </p>
               <p>
-                Each (prime) day you visit, you'll unlock a new cow photo (until
-                we run out). If you break the streak, the cow photos will
-                disappear!!
+                您连续访问每（质数）天，都会解锁一张新的牛照片（直到我们用完为止）。但如果中断了访问，牛的照片就会消失！！
               </p>
             </div>
           </div>

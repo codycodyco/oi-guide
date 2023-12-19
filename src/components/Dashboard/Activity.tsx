@@ -119,15 +119,14 @@ export default function Activity() {
               </div>
             ) : (
               <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
-                Hover over a square to view more details!
+                将鼠标悬停在正方形上可查看更多详细信息！
               </p>
             )}
           </div>
         </div>
 
         <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
-          Note that activity calculations are very much in development and will
-          change in the near future.
+            活动计算仍在开发中，并且将在不久的将来发生变化。
         </p>
       </div>
     </div>

@@ -191,7 +191,7 @@ export default function TopNavigationBar({
                 >
                   题目
                 </Link>
-                <Popover.Group as="nav" className="h-full">
+                {/* <Popover.Group as="nav" className="h-full">
                   <Popover className="h-full">
                     {({ open }) => (
                       <>
@@ -281,7 +281,7 @@ export default function TopNavigationBar({
                       </>
                     )}
                   </Popover>
-                </Popover.Group>
+                </Popover.Group> */}
                 <button
                   className="cursor-pointer inline-flex items-center px-1 border-b-2 border-transparent text-base font-medium leading-6 text-gray-500 hover:text-gray-900 hover:border-gray-300 focus:outline-none focus:text-gray-900 focus:border-gray-300 dark:text-dark-high-emphasis dark:hover:border-gray-500 dark:focus:border-gray-500 transition"
                   onClick={() => setIsContactUsActive(true)}
@@ -359,12 +359,7 @@ export default function TopNavigationBar({
                 </div>
               ) : (
                 <>
-                  <button
-                    onClick={() => signIn()}
-                    className="relative inline-flex items-center px-2 py-1 border border-transparent text-base leading-6 font-medium rounded-md text-gray-500 hover:text-gray-700 dark:text-dark-high-emphasis focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  >
-                    Login
-                  </button>
+                  
 
                   {/* Settings button */}
                   <Link
@@ -497,33 +492,7 @@ export default function TopNavigationBar({
                     Settings
                   </span>
                 </Link>
-                {firebaseUser ? (
-                  <a
-                    className="group -m-3 p-3 flex items-center rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
-                    onClick={() => signOut()}
-                  >
-                    <LogoutIcon
-                      className="h-6 w-6 text-gray-600 float-left dark:group-hover:text-gray-400"
-                      aria-hidden="true"
-                    />
-                    <span className="ml-3 text-base font-medium text-gray-700 dark:text-gray-300">
-                      Sign Out
-                    </span>
-                  </a>
-                ) : (
-                  <a
-                    className="group -m-3 p-3 cursor-pointer flex items-center rounded-md hover:bg-gray-100 dark:hover:bg-gray-700"
-                    onClick={() => signIn()}
-                  >
-                    <LoginIcon
-                      className="h-6 w-6 text-gray-600 float-left dark:group-hover:text-gray-400"
-                      aria-hidden="true"
-                    />
-                    <span className="ml-3 text-base font-medium text-gray-700 dark:text-gray-300">
-                      Sign In
-                    </span>
-                  </a>
-                )}
+
               </nav>
             </div>
           </div>

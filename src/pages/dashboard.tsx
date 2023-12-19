@@ -175,25 +175,7 @@ export default function DashboardPage(props: PageProps) {
             <div className="lg:px-8 pt-4 pb-6">
               <div className="flex flex-wrap mb-4">
                 <div className="w-full text-center">
-                  {firebaseUser ? (
-                    <>
-                      Signed in as <i>{firebaseUser.email}</i>.
-                    </>
-                  ) : (
-                    <span>
-                      Not signed in.{' '}
-                      <a
-                        href="#"
-                        onClick={e => {
-                          e.preventDefault();
-                          signIn();
-                        }}
-                        className="text-blue-600 dark:text-blue-300 underline"
-                      >
-                        Sign in now!
-                      </a>{' '}
-                    </span>
-                  )}
+                  
                 </div>
               </div>
               <div className="flex overflow-x-auto">
@@ -219,7 +201,7 @@ export default function DashboardPage(props: PageProps) {
           <header id="announcements">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h1 className="text-3xl font-bold leading-tight text-gray-900 dark:text-dark-high-emphasis">
-                Announcements
+                公告
               </h1>
             </div>
           </header>
@@ -229,7 +211,7 @@ export default function DashboardPage(props: PageProps) {
           <header>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h1 className="text-3xl font-bold leading-tight text-gray-900 dark:text-dark-high-emphasis">
-                Activity
+                活动
               </h1>
             </div>
           </header>
@@ -239,7 +221,7 @@ export default function DashboardPage(props: PageProps) {
           <header>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               <h1 className="text-3xl font-bold leading-tight text-gray-900 dark:text-dark-high-emphasis">
-                Statistics
+              统计数据
               </h1>
             </div>
           </header>
@@ -249,7 +231,7 @@ export default function DashboardPage(props: PageProps) {
                 <Card>
                   <div className="px-4 py-5 sm:p-6">
                     <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-dark-high-emphasis">
-                      Modules Progress - {SECTION_LABELS[lastViewedSection]}
+                      模块进度 - {SECTION_LABELS[lastViewedSection]}
                     </h3>
                     <div className="mt-6">
                       <DashboardProgress
@@ -264,7 +246,7 @@ export default function DashboardPage(props: PageProps) {
                 <Card>
                   <div className="px-4 py-5 sm:p-6">
                     <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-dark-high-emphasis">
-                      Problems Progress - {SECTION_LABELS[lastViewedSection]}
+                      题目进度 - {SECTION_LABELS[lastViewedSection]}
                     </h3>
                     <div className="mt-6">
                       <DashboardProgress
