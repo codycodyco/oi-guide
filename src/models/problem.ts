@@ -8,6 +8,10 @@ export const recentUsaco = ['Bronze', 'Silver', 'Gold', 'Plat'];
 
 // abbreviation -> [URL, description or full name, instructions to view solutions]
 export const probSources = {
+  luogu: [
+    'luogu.com.cn',
+    "洛谷",
+  ],
   Bronze: [
     'http://www.usaco.org/index.php?page=viewproblem2&cpid=',
     'USACO 2015-16 to present',
