@@ -35,10 +35,10 @@ export function getModulesProgressInfo(moduleIDs: string[]) {
   return getProgressInfo(
     moduleIDs,
     userProgressOnModules,
-    ['Complete'],
-    ['Reading', 'Practicing'],
-    ['Skipped'],
-    ['Not Started']
+    ['完成'],
+    ['正在阅读', '正在练习'],
+    ['跳过'],
+    ['未开始']
   );
 }
 

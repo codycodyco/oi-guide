@@ -150,7 +150,7 @@ export default function MarkdownLayout({
             <MobileAppBar />
 
             <ContentContainer tableOfContents={tableOfContents}>
-              <NotSignedInWarning />
+              
 
               <ModuleHeaders moduleLinks={moduleLinks} />
 
@@ -161,8 +161,6 @@ export default function MarkdownLayout({
               {children}
 
               <ModuleProgressUpdateBanner />
-
-              <ForumCTA />
 
               {/*<div className="my-8">*/}
               {/*  <ModuleFeedback markdownData={markdownData} />*/}

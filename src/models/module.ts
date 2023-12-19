@@ -74,10 +74,10 @@ export type ModuleProgress =
   | 'Ignored';
 
 export const ModuleProgressOptions: ModuleProgress[] = [
-  'Not Started',
-  'Reading',
-  'Practicing',
-  'Complete',
-  'Skipped',
-  'Ignored',
+  '未开始',
+  '正在阅读',
+  '正在练习',
+  '完成',
+  '跳过',
+  '无视',
 ];

@@ -6,7 +6,7 @@ import { ModuleProgress, ModuleProgressOptions } from '../../models/module';
 
 const moduleProgressToIcon = (status: ModuleProgress): JSX.Element => {
   switch (status) {
-    case 'Reading':
+    case '正在阅读':
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ const moduleProgressToIcon = (status: ModuleProgress): JSX.Element => {
           <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
         </svg>
       );
-    case 'Practicing':
+    case '正在练习':
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +28,7 @@ const moduleProgressToIcon = (status: ModuleProgress): JSX.Element => {
           <path d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" />
         </svg>
       );
-    case 'Complete':
+    case '完成':
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ const moduleProgressToIcon = (status: ModuleProgress): JSX.Element => {
           <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" />
         </svg>
       );
-    case 'Skipped':
+    case '跳过':
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +59,7 @@ const moduleProgressToIcon = (status: ModuleProgress): JSX.Element => {
           />
         </svg>
       );
-    case 'Ignored':
+    case '无视':
       return (
         <svg
           xmlns="http://www.w3.org/2000/svg"

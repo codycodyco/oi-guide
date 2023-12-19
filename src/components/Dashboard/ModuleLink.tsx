@@ -279,10 +279,10 @@ const ModuleLink = ({ link }: { link: ModuleLinkInfo }): JSX.Element => {
           <p className="block text-sm text-gray-400 group-hover:text-blue-700 dark:group-hover:text-dark-high-emphasis transition leading-5">
             {link.description}
 
-            <i>
+            {/* <i>
               <br />
               {timeAgoString(link.gitAuthorTime)}
-            </i>
+            </i> */}
           </p>
         </StyledLink>
       </Link>

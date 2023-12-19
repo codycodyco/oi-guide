@@ -120,14 +120,14 @@ export default function ModuleHeaders({
             </p>
           )}
         </div>
-        {markdownData instanceof ModuleInfo && (
+        {/* {markdownData instanceof ModuleInfo && (
           <div className="hidden lg:flex-shrink-0 lg:flex ml-4">
             <MarkCompleteButton
               state={moduleProgress}
               onChange={handleCompletionChange}
             />
           </div>
-        )}
+        )} */}
         {/* {markdownData instanceof ModuleInfo &&
           `Last Updated: ${time_ago(markdownData.gitAuthorTime)}`
         } */}
