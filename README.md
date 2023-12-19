@@ -1,6 +1,6 @@
 # OI Guide
 
-oi.guide是一个从零基础到noi比赛的公益训练指南
+oi.guide是一个从零基础到noi比赛的公益训练指南，目前还在开发过程中。
 
 本项目思路和技术来源于[usaco.guide](https://github.com/cpinitiative/usaco-guide)，并在此基础上针对国内的训练计划进行重新的课程研发，适合中国选手参考和学习
 
