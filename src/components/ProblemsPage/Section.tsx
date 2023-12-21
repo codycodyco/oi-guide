@@ -5,7 +5,8 @@ import { useDarkMode } from '../../context/DarkModeContext';
 
 const items = [
   { label: 'General', value: SECTIONS.general },
-  { label: 'Bronze', value: SECTIONS.bronze },
+  { label: 'grammar',value: SECTIONS.grammar},
+  { label: 'c', value: SECTIONS.c },
   { label: 'Silver', value: SECTIONS.silver },
   { label: 'Gold', value: SECTIONS.gold },
   { label: 'Platinum', value: SECTIONS.plat },

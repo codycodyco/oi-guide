@@ -101,10 +101,10 @@ export default function TopNavigationBar({
       key: 'general',
     },
     {
-      name: 'Bronze',
-      href: '/bronze',
+      name: 'c',
+      href: '/c',
       icon: BookmarkIcon,
-      key: 'bronze',
+      key: 'c',
     },
     {
       name: 'Silver',

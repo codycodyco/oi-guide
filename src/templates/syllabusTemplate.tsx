@@ -61,7 +61,8 @@ const SectionContainer = styled.div`
 
 const HeroBGColor: { [key in SectionID]: string } = {
   general: 'bg-blue-700 dark:bg-blue-900',
-  bronze: 'bg-orange-800 dark:bg-orange-900',
+  grammar: 'bg-blue-700 dark:bg-blue-900',
+  c: 'bg-orange-800 dark:bg-orange-900',
   silver: 'bg-teal-700 dark:bg-teal-900',
   gold: 'bg-yellow-700 dark:bg-yellow-900',
   plat: 'bg-purple-700 dark:bg-purple-900',
@@ -70,7 +71,8 @@ const HeroBGColor: { [key in SectionID]: string } = {
 
 const HeroTextColor: { [key in SectionID]: string } = {
   general: 'text-teal-200',
-  bronze: 'text-orange-100',
+  grammar: 'text-teal-200',
+  c: 'text-orange-100',
   silver: 'text-teal-100',
   gold: 'text-yellow-100',
   plat: 'text-purple-100',
@@ -88,12 +90,23 @@ const topicsWarning = (
 const SECTION_DESCRIPTION: { [key in SectionID]: React.ReactNode } = {
   general: (
     <>
-      在这个阶段，你将要学习最基础的c语言语法知识，以及认识算法竞赛
+      在这个阶段，你可以认识到算法竞赛，同时了解到许多对参加比赛、调试程序、代码规范的知识与技巧
       <br />
-      竞赛中不会考察，但是对参与比赛十分有用的技巧也会在这个章节学习
+      竞赛中往往不会考察，但却是完善算法思维的重要知识
+      <br />
+      该阶段不用刻意地学习，它更适合你偶尔回来看看，找找自己需要些什么。
+      <br />
+      在之后的学习里，你也可能被某个其他阶段的知识点跳转回这里。
     </>
   ),
-  bronze: (
+  grammar:(
+    <>
+      在这个阶段，你将要学习最基础的c语言语法知识
+      <br />
+      语法是学习算法的一小步，也是程序实现的关键
+    </>
+  ),
+  c: (
     <>
       {topicsWarning}
       <br />

@@ -2,7 +2,8 @@
 
 export type SectionID =
   | 'general'
-  | 'bronze'
+  | 'grammar'
+  | 'c'
   | 'silver'
   | 'gold'
   | 'plat'
@@ -68,7 +69,18 @@ const MODULE_ORDERING: { [key in SectionID]: Chapter[] } = {
       items: ['usaco-faq', 'usaco-monthlies', 'usaco-camp', 'resources-usa'],
     },
   ],
-  bronze: [
+  grammar:[
+    {
+      name:'输入和输出',
+      items:[
+        'first-program',
+        'output',
+        'variable',
+      ],
+    }
+
+  ],
+  c: [
     {
       name: 'Getting Started',
       items: ['time-comp', 'intro-ds', 'simulation', 'rect-geo'],
@@ -269,8 +281,9 @@ export const SECTIONS: SectionID[] = Object.keys(
   MODULE_ORDERING
 ) as SectionID[];
 export const SECTION_LABELS: { [key in SectionID]: string } = {
-  general: '语法与竞赛入门',
-  bronze: '普及组入门',
+  general: '竞赛入门与编程意识',
+  grammar: '基本c++语法',
+  c: '普及组入门',
   silver: '普及组加强',
   gold: '提高组入门',
   plat: '提高组加强',
@@ -279,7 +292,7 @@ export const SECTION_LABELS: { [key in SectionID]: string } = {
 export const SECTION_SEO_DESCRIPTION: { [key in SectionID]: string } = {
   general:
     'General information for USACO and Competitive Programming. Includes resources to pick a language, set up an IDE, practice tips, and more!',
-  bronze:
+  c:
     'Topics for USACO Bronze include time complexity, data structures, sorting, simulation, complete search, ad hoc, greedy, graphs, rectangle geometry, sets and maps, and recursion.',
   silver:
     'Topics for USACO Silver include binary search on the answer, prefix sums, two pointers, dfs, floodfill, trees, custom comparators, greedy with sorting, and more!',
@@ -289,7 +302,7 @@ export const SECTION_SEO_DESCRIPTION: { [key in SectionID]: string } = {
 };
 export const SECTION_SEO_TITLES: { [key in SectionID]: string } = {
   general: 'General USACO Information',
-  bronze: 'USACO Bronze Topics',
+  c: 'USACO Bronze Topics',
   silver: 'USACO Silver Topics',
   gold: 'USACO Gold Topics',
   plat: 'USACO Platinum Topics',

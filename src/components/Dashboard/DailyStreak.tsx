@@ -187,8 +187,11 @@ export default function DailyStreak({ streak }) {
       <div className="bg-white dark:bg-gray-900 shadow sm:rounded-lg overflow-hidden lg:col-span-2">
         <div className="px-4 py-5 sm:p-6">
           <div className="text-center">
+            <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-dark-high-emphasis ">
+              太牛了！
+            </h3>
             <h3 className="text-lg leading-6 font-medium text-gray-900 dark:text-dark-high-emphasis">
-              🔥 连续学习{streak} 天 : 请加油！
+              已经🔥 连续学习{streak} 天 : 请继续加油！
             </h3>
             <div className="mt-3 text-sm leading-5 text-gray-500 dark:text-dark-med-emphasis space-y-1">
               <p>
@@ -196,7 +199,7 @@ export default function DailyStreak({ streak }) {
                 {streak !== 1 && 's'}
               </p>
               <p>
-                您连续访问每（质数）天，都会解锁一张新的牛照片（直到我们用完为止）。但如果中断了访问，牛的照片就会消失！！
+                您连续访问每（质数）天，都会变得更牛，所以会解锁一张新的牛照片（直到我们用完为止）。但如果中断了访问，牛的照片就会消失！！
               </p>
             </div>
           </div>
